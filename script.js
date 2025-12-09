@@ -22,4 +22,4 @@ if(contactForm){
     alert('Thanks for contacting ProTech Agency! (demo)');
     contactForm.reset();
   });
-});
+};
