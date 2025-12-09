@@ -2,104 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ProTech Agency — Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="ProTech Agency home">
-        <img src="https://via.placeholder.com/150x40?text=ProTech+Logo" alt="ProTech Logo">
-      </a>
-
-      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="https://via.placeholder.com/150x40?text=ProTech+Logo" alt="ProTech Logo"></a>
+      <nav class="nav" id="nav">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
-
       <div class="header-actions">
-        <button id="themeToggle" class="btn-ghost" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
-        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">☰</button>
+        <button id="themeToggle" class="btn-ghost">🌙</button>
+        <button class="hamburger" id="hamburger">☰</button>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero container fade-in" aria-labelledby="hero-title">
+  <section class="hero container fade-in">
     <div class="hero-text">
-      <h1 id="hero-title">We Grow Brands with Strategy & Design</h1>
+      <h1>We Grow Brands with Strategy & Design</h1>
       <p>Data-driven marketing, clean product design and scalable websites that convert.</p>
-      <p><a class="btn-primary" href="contact.html">Get Started</a></p>
+      <a class="btn-primary" href="contact.html">Get Started</a>
     </div>
-
-    <div class="hero-image" aria-hidden="true">
-      <img src="https://images.unsplash.com/photo-1521790945508-bf2a36314e85?w=1400&q=80&auto=format&fit=crop" alt="Team collaborating around a laptop">
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1521790945508-bf2a36314e85?w=1200&q=80&auto=format&fit=crop" alt="Team working">
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
   <section class="services container">
-    <h2 class="section-title">Our Services</h2>
+    <h2 class="section-title fade-in">Our Services</h2>
     <div class="service-grid">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop" alt="Web development">
+      <article class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop" alt="">
         <h3>Web Development</h3>
         <p>Fast, secure and responsive websites built for growth.</p>
       </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80&auto=format&fit=crop" alt="Marketing strategy">
+      <article class="card fade-in" style="transition-delay:120ms;">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80&auto=format&fit=crop" alt="">
         <h3>Marketing Strategy</h3>
         <p>Paid + organic strategies to increase traffic & conversions.</p>
       </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop" alt="Brand design">
+      <article class="card fade-in" style="transition-delay:240ms;">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop" alt="">
         <h3>Brand Design</h3>
         <p>Identity, messaging and UX that builds trust with users.</p>
       </article>
     </div>
-
     <p class="center"><a class="btn-ghost" href="services.html">See all services</a></p>
   </section>
 
-  <!-- TESTIMONIALS -->
   <section class="testimonials container">
-    <h2 class="section-title">What Clients Say</h2>
+    <h2 class="section-title fade-in">What Clients Say</h2>
     <div class="testi-grid">
-      <blockquote class="testi-card">
+      <blockquote class="testi-card fade-in">
         <p>“ProTech Agency redesigned our site and doubled conversions within three months.”</p>
         <cite>— Sarah K., CEO</cite>
       </blockquote>
-
-      <blockquote class="testi-card">
+      <blockquote class="testi-card fade-in" style="transition-delay:120ms">
         <p>“Professional, punctual and excellent communication. Highly recommend.”</p>
         <cite>— Peter L., Founder</cite>
       </blockquote>
-
-      <blockquote class="testi-card">
+      <blockquote class="testi-card fade-in" style="transition-delay:240ms">
         <p>“Their marketing campaign brought us qualified leads and real ROI.”</p>
         <cite>— Maya R., Growth Lead</cite>
       </blockquote>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> ProTech Agency</div>
-      <div class="socials" aria-hidden="true">
+      <div class="socials">
         <a href="#" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
         <a href="#" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
         <a href="#" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
       </div>
     </div>
   </footer>
-
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
